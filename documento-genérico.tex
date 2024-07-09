@@ -1,0 +1,133 @@
+% !TEX program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% Plantilla certificado UGR
+% Francisco Torralbo Torralbo, ftorralbo@ugr.es
+% 2023-02-17
+
+\documentclass[a4paper,10pt]{scrartcl}
+
+\KOMAoptions{%
+  twoside=false,
+  ,parskip=half
+  ,headings=normal   % Tamaño de letra para los títulos: small, normal, big
+  %,numbers=noenddot        % Añade un punto después de la numeración de las secciones: enddot, noenddot
+  % ,mpinclude
+  % ,footinclude=true
+  ,headinclude=true
+  % ,DIV=10
+}
+
+% -------------------------------------------------------------------
+% INFORMACIÓN DEL DOCUMENTO
+% -------------------------------------------------------------------
+\usepackage{xspace}
+
+\newcommand{\miTitulo}{Título\xspace}
+\newcommand{\miNombre}{Nombre Apellidos\xspace}
+\newcommand{\miTelefono}{958 000 000\xspace}
+\newcommand{\miEmail}{profesor@ugr.es\xspace}
+\newcommand{\miCargo}{Profesor Titular\xspace}
+\newcommand{\miDepartamento}{Departamento}
+\newcommand{\logoDepartamento}{logoDepartamento}
+\newcommand{\miCentro}{Facultad o escuela}
+\newcommand{\miDireccion}{Fuentenueva s/n, 18071 Granada}
+\newcommand{\miUniversidad}{Universidad de Granada}
+
+% Increase text height so the footer is put closer to the bottom boundary of the page.
+\setlength{\textheight}{1.2\textheight}
+
+\usepackage[
+  headsepline=false,
+  headwidth=\textwidth+2\marginparwidth,
+  footwidth=\textwidth+2\marginparwidth,
+]{scrlayer-scrpage}
+\clearpairofpagestyles
+
+\ihead{\includegraphics[width=0.4\textwidth]{logo-ugr-horizontal}}
+% \chead{\pagemark}
+\ohead{\upshape \miNombre \\ \miCargo \\\miDepartamento \\ \miCentro}
+\ifoot{\upshape \miDireccion}
+\cfoot{\upshape Tlf.\ +34 \miTelefono}
+\ofoot{\upshape \miEmail}
+% Alternativamente podemos centrar
+% \cfoot{\upshape \miDireccion · Tlf.\ +34 \miTelefono · \miEmail}
+
+\setkomafont{title}{\itshape\large}
+
+% Idioma
+\usepackage[activeacute,spanish]{babel}
+\usepackage[utf8]{inputenc}
+\selectlanguage{spanish}
+
+\usepackage{breakcites}
+%\usepackage{siunitx}
+
+% Palatino clone using the newpxtext package. Alternatively: tgpagella with mathpazo.
+\usepackage[T1]{fontenc}
+\usepackage[theoremfont,largesc,tighter,p,osf]{newpxtext}
+\usepackage[noamssymbols]{newpxmath}
+\useosf % old-style figures in text, not in math
+    \linespread{1.05} % Palatino needs more leading (space between lines)
+% Clon de Gill Sans
+\usepackage{cabin}
+
+
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype} % http://www.khirevich.com/latex/microtype/
+\microtypecontext{spacing=nonfrench}
+
+\usepackage[toc,eqno,enum,bib,lineno]{tabfigures}
+\usepackage{xcolor}
+  \definecolor{ugr}{RGB}{190, 57, 63} % {210, 47, 61}
+  \definecolor{ugrDark}{RGB}{190, 57, 63}
+  \definecolor{ugrText}{RGB}{26, 25, 25}
+  \definecolor{ugrGray}{RGB}{99, 100, 99}
+  \newcommand{\alert}[1]{\textcolor{ugr}{#1}}
+
+\usepackage{graphicx}
+    \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+    \graphicspath{{img/}{logos}}
+
+
+\usepackage{hyperref}
+\hypersetup{%
+  % uncomment the following line if you want to have color links
+    %colorlinks=true, linktocpage=true, pdfstartview=FitV,%
+    % uncomment the following line if you want to have black links (e.g., for printing)
+    colorlinks=false, linktocpage=false, pdfborder={0 0 0}, pdfstartpage=3, pdfstartview=FitV,% 
+    %urlcolor=webbrown, linkcolor=RoyalBlue, citecolor=webgreen, %pagecolor=RoyalBlue,%
+    %urlcolor=Black, linkcolor=Black, citecolor=Black, %pagecolor=Black,%
+    pdftitle={Plantilla certificado UGR},%
+    pdfauthor={Francisco Torralbo},%
+    pdfkeywords={},%
+    pdfcreator={pdfLaTeX},%
+    pdfproducer={LaTeX with hyperref}%
+}
+
+
+\usepackage{eso-pic}
+\newcommand\AtPageLowerRight[1]{\put(\LenToUnit{\paperwidth-0pt},0){\llap{\raisebox{0pt}{#1}}}}
+\AddToShipoutPictureBG{\AtPageLowerRight{\includegraphics[width=0.6\pdfpagewidth]{marca-agua-logo-ugr}}}
+
+\begin{document}
+\title{\miTitulo}
+\author{}
+\date{}
+\maketitle
+\thispagestyle{scrheadings}
+texto
+
+\vfill\vfill
+\begin{center}
+  Granada, \today
+
+  \includegraphics[width=7cm]{img/firma}
+
+  \miNombre
+\end{center}
+\vfill
+% \includegraphics[width=126mm]{marca-agua-logo-ugr}
+% \newpage
+% \thispagestyle{empty}
+
+\end{document}
