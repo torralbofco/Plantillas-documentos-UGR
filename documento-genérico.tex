@@ -13,10 +13,12 @@
   ,headings=normal   % Tamaño de letra para los títulos: small, normal, big
   %,numbers=noenddot        % Añade un punto después de la numeración de las secciones: enddot, noenddot
   % ,mpinclude
-  % ,footinclude=true
+  ,footinclude=false
   ,headinclude=true
-  % ,DIV=10
+  ,DIV=9
 }
+
+\usepackage{showframe}
 
 % -------------------------------------------------------------------
 % INFORMACIÓN DEL DOCUMENTO
@@ -27,6 +29,7 @@
 \newcommand{\miNombre}{Nombre Apellidos\xspace}
 \newcommand{\miTelefono}{958 000 000\xspace}
 \newcommand{\miEmail}{profesor@ugr.es\xspace}
+\newcommand{\miURL}{\url{www.ugr.es/~profesor}\xspace}
 \newcommand{\miCargo}{Profesor Titular\xspace}
 \newcommand{\miDepartamento}{Departamento}
 \newcommand{\logoDepartamento}{logoDepartamento}
@@ -39,17 +42,19 @@
 
 \usepackage[
   headsepline=false,
-  headwidth=\textwidth+2\marginparwidth,
-  footwidth=\textwidth+2\marginparwidth,
+  headwidth=\textwidth+1.7\marginparwidth,
+  footwidth=\textwidth+1.7\marginparwidth,
 ]{scrlayer-scrpage}
 \clearpairofpagestyles
 
-\ihead{\includegraphics[width=0.4\textwidth]{logo-ugr-horizontal}}
+\ihead{
+  \includegraphics[width=0.4\textwidth]{logo-ugr-horizontal}
+}
 % \chead{\pagemark}
 \ohead{\upshape \miNombre \\ \miCargo \\\miDepartamento \\ \miCentro}
 \ifoot{\upshape \miDireccion}
 \cfoot{\upshape Tlf.\ +34 \miTelefono}
-\ofoot{\upshape \miEmail}
+\ofoot{\upshape \miEmail · \miURL}
 % Alternativamente podemos centrar
 % \cfoot{\upshape \miDireccion · Tlf.\ +34 \miTelefono · \miEmail}
 
