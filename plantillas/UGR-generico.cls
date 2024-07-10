@@ -2,15 +2,6 @@
 \ProvidesClass{UGR-generico}[2023/06/15 Clase de documento genérico siguiendo las directrices del manual de identidad corporativa de la Universidad de Granada] 
 
 
-% ===================================================================
-% OPCIONES DE LA CLASE
-% ===================================================================
-
-\DeclareOption{monocromo}{
-  \renewcommand{\archivoportada}{portada-ugr-color}
-  % \PassOptionsToPackage[colorlinks = true, linkcolor = [rgb]{0.5, 0, 0}, urlcolor = [rgb]{0, 0, 0.5}, citecolor = [rgb]{0, 0.5, 0}, ]{hyperref}
-}
-\ProcessOptions\relax
 
 \LoadClass[fontsize=10pt, parskip=full, paper=a4, twoside=false, footinclude=false,headinclude=true, DIV=9]{scrartcl}
 
@@ -37,6 +28,25 @@
 % \cfoot{\upshape \miDireccion · Tlf.\ +34 \miTelefono · \miEmail}
 
 \setkomafont{title}{\itshape\large}
+
+% ===================================================================
+% OPCIONES DE LA CLASE
+% ===================================================================
+
+\DeclareOption{monocromo}{
+  \ihead{
+    \includegraphics[width=0.4\textwidth]{UGR-MARCA-02-monocromo}
+  }
+}
+
+\DeclareOption{noDatosCabecera}{
+  \ohead{}
+}
+
+\DeclareOption{noDatosPie}{
+  \ifoot{}\cfoot{}\ofoot{}
+}
+\ProcessOptions\relax
 % -------------------------------------------------------------------
 % PAQUETES Y OPCIONES
 % -------------------------------------------------------------------
