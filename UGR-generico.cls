@@ -12,7 +12,7 @@
 }
 \ProcessOptions\relax
 
-\LoadClass[fontsize=10pt, paper=a4, twoside=false, footinclude=false,headinclude=true, DIV=9]{scrartcl}
+\LoadClass[fontsize=10pt, parskip=full, paper=a4, twoside=false, footinclude=false,headinclude=true, DIV=9]{scrartcl}
 
 % Increase text height so the footer is put closer to the bottom boundary of the page.
 \setlength{\textheight}{1.2\textheight}
@@ -45,7 +45,6 @@
   \unaccentedoperators % Desactiva los acentos en los operadores matemáticso (p.e. \lim, \max, ...). Eliminar esta opción si queremos que vayan acentuados
 
 \RequirePackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
-\microtypecontext{spacing=nonfrench}
 \usepackage[toc,eqno,enum,bib,lineno]{tabfigures}
 
 % Las tipografías elegidas para el documento, siguiendo la guía de estilo de la UGR, son las siguientes
