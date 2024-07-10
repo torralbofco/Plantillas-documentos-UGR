@@ -44,6 +44,14 @@
   }
 }
 
+\DeclareOption{corporativo}{
+  \renewcommand{\marcaAgua}{marca-agua-logo-ugr-color}
+  \renewcommand{\accentColor}{ugr}
+  \ihead{
+    \includegraphics[width=0.4\textwidth]{UGR-MARCA-02-color-corporativo}
+  }
+}
+
 \DeclareOption{noDatosCabecera}{
   \ohead{}
 }
