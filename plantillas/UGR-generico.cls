@@ -17,7 +17,7 @@
 \clearpairofpagestyles
 
 \ihead{
-  \includegraphics[width=0.4\textwidth]{logo-ugr-horizontal}
+  \includegraphics[width=0.4\textwidth]{UGR-MARCA-02-color}
 }
 % \chead{\pagemark}
 \ohead{\upshape \miNombre \\ \miCargo \\\miDepartamento \\ \miCentro}
