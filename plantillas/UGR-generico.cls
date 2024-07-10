@@ -33,7 +33,12 @@
 % OPCIONES DE LA CLASE
 % ===================================================================
 
+\newcommand{\marcaAgua}{marca-agua-logo-ugr-color}
+\newcommand{\accentColor}{ugr}
+
 \DeclareOption{monocromo}{
+  \renewcommand{\marcaAgua}{marca-agua-logo-ugr}
+  \renewcommand{\accentColor}{ugrGray}
   \ihead{
     \includegraphics[width=0.4\textwidth]{UGR-MARCA-02-monocromo}
   }
@@ -133,6 +138,6 @@
 % Definición de la imagen de fondo (ver comando \archivoportada).
 \RequirePackage{eso-pic}
 \newcommand\AtPageLowerRight[1]{\put(\LenToUnit{\paperwidth-0pt},0){\llap{\raisebox{0pt}{#1}}}}
-\AddToShipoutPictureBG{\AtPageLowerRight{\includegraphics[width=0.6\pdfpagewidth]{marca-agua-logo-ugr}}}
+\AddToShipoutPictureBG{\AtPageLowerRight{\includegraphics[width=0.6\pdfpagewidth]{\marcaAgua}}}
 
 % \renewcommand{\maketitle}{hola}
