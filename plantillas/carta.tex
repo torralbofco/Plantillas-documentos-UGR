@@ -1,0 +1,77 @@
+% !TEX program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% Plantilla documento genérico UGR
+% Francisco Torralbo Torralbo, ftorralbo@ugr.es
+% 2023-02-17
+
+\documentclass{UGR-generico}
+
+% -------------------------------------------------------------------
+% INFORMACIÓN DEL DOCUMENTO
+% -------------------------------------------------------------------
+
+% Datos del remitente
+\newcommand{\miTitulo}{Título\xspace}
+\newcommand{\miNombre}{Nombre Apellidos\xspace}
+\newcommand{\miTelefono}{958 000 000\xspace}
+\newcommand{\miEmail}{profesor@ugr.es\xspace}
+\newcommand{\miURL}{\url{www.ugr.es/~profesor}\xspace}
+\newcommand{\miCargo}{Profesor Titular\xspace}
+\newcommand{\miDepartamento}{Departamento}
+\newcommand{\logoDepartamento}{logoDepartamento}
+\newcommand{\miCentro}{Facultad o escuela}
+\newcommand{\miDireccion}{Fuentenueva s/n, 18071 Granada}
+\newcommand{\miUniversidad}{Universidad de Granada}
+
+% Datos de envío
+
+\newcommand{\desNombre}{Destinatario\xspace}
+\newcommand{\desCargo}{Cargo\xspace}
+\newcommand{\desDireccion}{Dirección\xspace}
+\newcommand{\desCP}{Código postal\xspace}
+\newcommand{\desPoblacion}{Población\xspace}
+\newcommand{\desPais}{Pais\xspace}
+
+\begin{document}
+\thispagestyle{scrheadings}
+
+% Bloque de destinatario
+\hfill\vfill
+\textbf{\desNombre}\\
+\textit{\desCargo}\\
+\desDireccion \\
+\desCP, \desPoblacion (\desPais)
+\vfill
+
+Granada, \today
+\medskip
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla orci, fermentum vitae enim in, pulvinar commodo turpis. Aliquam faucibus elit vestibulum tellus ornare, eu aliquet elit feugiat. Pellentesque posuere pharetra libero eget commodo. Aenean nisi est, vulputate at nisl vel, lobortis aliquet nisi. Praesent nec ullamcorper mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce quis eros placerat, molestie justo eget, maximus erat. Nullam sollicitudin risus egestas libero interdum, quis venenatis sem dignissim. Etiam fringilla dictum justo, eget eleifend risus malesuada eu.
+
+Ut scelerisque orci nisi, quis gravida massa euismod fermentum. Mauris in pellentesque ex. Etiam eu sodales lorem, quis egestas sem. Pellentesque vulputate tellus velit, vitae pellentesque velit vestibulum ut. Suspendisse dictum orci nulla, eu tempus leo sollicitudin eu. Fusce condimentum diam nibh. Ut vulputate auctor dui, vitae tristique dui porttitor ut. Etiam efficitur tempor dolor vitae sodales. Nullam sodales arcu sit amet dui luctus facilisis. Aenean viverra dui nisl, consectetur sollicitudin massa laoreet et. Curabitur pharetra ac augue placerat interdum. Suspendisse tincidunt porta dapibus.
+
+Proin mollis ligula eu neque finibus rutrum. Proin ut dolor sed purus interdum sodales sed vel tellus. In lacinia dui nec erat viverra gravida. Vivamus vel bibendum lorem. Donec et vulputate sapien, et tempor felis. Phasellus ut justo ac ipsum eleifend sodales. Proin sed ante mattis felis lobortis sollicitudin vehicula in purus. Aenean venenatis urna eleifend tellus tempus, ut ullamcorper ex aliquam. Proin rhoncus dolor a pellentesque rhoncus. In a erat nulla. Sed luctus nunc quis dignissim placerat. Nulla facilisi. Proin sed dolor mollis, malesuada sapien vitae, euismod ligula. Fusce ultrices mauris ut tellus tempus, eu luctus lectus malesuada. Suspendisse ut tortor at nisl mattis placerat quis nec arcu. 
+
+% Para firmar el documento digitalmente, eliminar el siguiente bloque te texto.
+\vfill\vfill
+\begin{center}
+
+  \includegraphics[width=7cm]{img/firma}
+
+  \begin{bfseries}
+  \miNombre\\\smallskip
+  \miCargo
+  \end{bfseries}
+\end{center}
+\vfill
+
+
+% Si es necesario que el documento tenga varias páginas descomentar el siguiente bloque:
+
+% \newpage
+% \thispagestyle{empty}
+%
+% Texto en nueva página.
+
+\end{document}
