@@ -3,6 +3,30 @@
 
 
 
+% ===================================================================
+% OPCIONES DE LA CLASE
+% ===================================================================
+
+\newcommand{\marcaAgua}{marca-agua-logo-ugr-color}
+\newcommand{\accentColor}{ugr}
+\newcommand{\logocabecera}{UGR-MARCA-02-color}
+
+\DeclareOption{monocromo}{
+  \renewcommand{\logocabecera}{UGR-MARCA-02-monocromo}
+  \renewcommand{\marcaAgua}{marca-agua-logo-ugr}
+  \renewcommand{\accentColor}{ugrGray}
+}
+
+\DeclareOption{corporativo}{
+  \renewcommand{\logocabecera}{UGR-MARCA-02-color-corporativo}
+  \renewcommand{\marcaAgua}{marca-agua-logo-ugr-color}
+  \renewcommand{\accentColor}{ugr}
+}
+
+\ProcessOptions\relax
+
+
+
 \LoadClass[fontsize=10pt, parskip=full, paper=a4, twoside=false, footinclude=false,headinclude=true, DIV=12]{scrartcl}
 
 % Increase text height so the footer is put closer to the bottom boundary of the page.
@@ -18,32 +42,12 @@
 \clearpairofpagestyles
 
 \ihead{
-  \hspace*{-23mm}\includegraphics[width=0.4\textwidth]{UGR-MARCA-02-color}
+  \hspace*{-23mm}\includegraphics[width=0.4\textwidth]{\logocabecera}
 }
 \ohead{\upshape \exDepartamento \\ \exCursoAcademico}
 
 \setkomafont{title}{\itshape\large}
 
-% ===================================================================
-% OPCIONES DE LA CLASE
-% ===================================================================
-
-\newcommand{\marcaAgua}{marca-agua-logo-ugr-color}
-\newcommand{\accentColor}{ugr}
-
-\DeclareOption{monocromo}{
-  \renewcommand{\marcaAgua}{marca-agua-logo-ugr}
-  \renewcommand{\accentColor}{ugrGray}
-  \ihead{
-    \hspace*{-23mm}\includegraphics[width=0.4\textwidth]{UGR-MARCA-02-monocromo}
-  }
-}
-
-\DeclareOption{noDatosCabecera}{
-  \ohead{}
-}
-
-\ProcessOptions\relax
 
 \renewcommand{\labelenumii}{\theenumii} 
 \renewcommand{\theenumii}{(\roman{enumii})}
