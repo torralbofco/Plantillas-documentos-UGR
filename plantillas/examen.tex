@@ -1,0 +1,62 @@
+% !TEX program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% Plantilla examen UGR
+% Francisco Torralbo Torralbo, ftorralbo@ugr.es
+
+\documentclass[monocromo]{UGR-examen}
+
+% -------------------------------------------------------------------
+% INFORMACIÓN DEL DOCUMENTO
+% -------------------------------------------------------------------
+
+% Datos del examen
+\newcommand{\exGrado}{Grado\xspace}
+\newcommand{\exDepartamento}{Departamento\xspace}
+\newcommand{\exAsignatura}{Asignatura\xspace}
+\newcommand{\exCursoAcademico}{Curso académico 23/24\xspace}
+\newcommand{\exConvocatoria}{ordinario\xspace}
+\newcommand{\exFecha}{17 de julio de 2024\xspace}
+\newcommand{\exInstrucciones}{Todas las respuestas han de estar razonadas. Todos los ejercicios tienen la misma puntuación. Las hojas deben entregarse numeradas y llevar todas el nombre y grupo, situando esta hoja la primera.\xspace}
+
+\begin{document}
+
+% Bloque cabecera examen
+\vspace*{-2em}
+\begin{center}
+  \itshape
+  {\large Examen \exConvocatoria. \exFecha}\\
+  \exAsignatura. \exGrado.
+\end{center}
+\vspace{-1em}   
+\normalsize{Apellidos, Nombre}: \hrulefill\hrulefill\hrulefill\hrulefill Grupo: \hrulefill 
+% --------------------------------
+
+
+% Texto del examen
+\begin{enumerate}
+  \item Primer ejercicio
+  \item \textbf{[2 puntos]} Segundo ejercicio
+    \begin{enumerate}
+      \item Primera cuestión
+      \item Segunda cuestión
+    \end{enumerate}
+\end{enumerate}
+
+
+\vfill
+
+{
+  \footnotesize
+  \exInstrucciones
+}
+
+
+% Si es necesario que el documento tenga varias páginas descomentar el siguiente bloque:
+
+% \newpage
+% \thispagestyle{empty}
+%
+% Texto en nueva página.
+
+\end{document}
