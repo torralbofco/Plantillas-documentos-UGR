@@ -5,7 +5,7 @@
 % Francisco Torralbo Torralbo, ftorralbo@ugr.es
 % 2023-02-17
 
-\documentclass{UGR-generico}
+\documentclass[noDatosCabecera, noDatosPie]{UGR-generico}
 
 % -------------------------------------------------------------------
 % INFORMACIÓN DEL DOCUMENTO
@@ -24,26 +24,34 @@
 \newcommand{\miDireccion}{Fuentenueva s/n, 18071 Granada}
 \newcommand{\miUniversidad}{Universidad de Granada}
 
-% Datos de envío
-
+% Datos de destinatario
 \newcommand{\desNombre}{Destinatario\xspace}
-\newcommand{\desCargo}{Cargo\xspace}
 \newcommand{\desDireccion}{Dirección\xspace}
 \newcommand{\desCP}{Código postal\xspace}
 \newcommand{\desPoblacion}{Población\xspace}
 \newcommand{\desPais}{País\xspace}
 
 \begin{document}
-\thispagestyle{scrheadings}
 
-% Bloque de destinatario
-\hfill\vfill
-\textbf{\desNombre}\\
-\textit{\desCargo}\\
-\desDireccion \\
-\desCP, \desPoblacion \\
-\desPais
-\vfill
+% Bloque de remitente y destinatario. 
+\vspace*{-15mm}\noindent{\color{ugr}\rule{36mm}{0.5pt}}
+\par\vspace{-2mm}
+\begin{minipage}[t]{36mm}
+  \textbf{\miNombre} \\ 
+  \textit{\miCargo} \\
+  \miDepartamento \\ 
+  \miCentro
+\end{minipage}%
+\hspace{0.2\linewidth}
+\begin{minipage}[t]{0.3\linewidth}
+  \textbf{\desNombre}\\
+  \desDireccion \\
+  \desCP, \desPoblacion \\
+  \desPais
+\end{minipage}
+\vspace{25mm}
+% -------------------------------------------
+
 
 Granada, \today
 \medskip
