@@ -15,7 +15,8 @@
 \LoadClass[fontsize=10pt, parskip=full, paper=a4, twoside=false, footinclude=false,headinclude=true, DIV=9]{scrartcl}
 
 % Increase text height so the footer is put closer to the bottom boundary of the page.
-\setlength{\textheight}{1.2\textheight}
+\setlength{\textheight}{1.1\textheight}
+\setlength{\headheight}{51pt}
 
 \RequirePackage[
   headsepline=false,
