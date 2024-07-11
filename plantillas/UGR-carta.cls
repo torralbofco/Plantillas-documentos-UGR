@@ -84,6 +84,12 @@
 \DeclareOption{noDatosPie}{
   \ifoot{}\cfoot{}\ofoot{}
 }
+
+\def\boolmarcaagua{0}
+\DeclareOption{marcaagua}{
+  \def\boolmarcaagua{1}
+}
+
 \ProcessOptions\relax
 % -------------------------------------------------------------------
 % PAQUETES Y OPCIONES
@@ -168,10 +174,11 @@
 % PORTADA Y PÁGINA DE TÍTULO
 % -------------------------------------------------------------------
 
-% Definición de la imagen de fondo (ver comando \archivoportada).
+\if\boolmarcaagua1
 \RequirePackage{eso-pic}
 \newcommand\AtPageLowerRight[1]{\put(\LenToUnit{\paperwidth-0pt},0){\llap{\raisebox{0pt}{#1}}}}
 \AddToShipoutPictureBG{\AtPageLowerRight{\includegraphics[width=0.6\pdfpagewidth]{\marcaAgua}}}
+\fi
 
 % \AtEndDocument{
 % % Para firmar el documento digitalmente, eliminar el siguiente bloque te texto.
