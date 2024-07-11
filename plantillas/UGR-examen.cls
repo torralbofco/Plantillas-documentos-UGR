@@ -72,7 +72,6 @@
 \ihead{
   \hspace*{-23mm}\includegraphics[width=0.4\textwidth]{\logocabecera}
 }
-\ohead{\upshape \exDepartamento \\ \exCursoAcademico}
 \ohead{\upshape \printDepartamento \\ \printCursoAcademico}
 
 \setkomafont{title}{\itshape\large}
@@ -113,7 +112,6 @@
 \RequirePackage{inconsolata}
 
 \RequirePackage{setspace}
-\RequirePackage{xspace} % Para problemas de espaciado al definir comandos
 
 \RequirePackage{xurl}
 
@@ -128,7 +126,6 @@
   linkcolor = [rgb]{0.5, 0, 0}, % Color de los enlaces internos
   urlcolor = [rgb]{0, 0, 0.5},  % Color de los hipervínculos
   citecolor = [rgb]{0, 0.5, 0}, % Color de las referencias bibliográficas
-  pdfsubject={},%
   pdfsubject={Examen, \textcopyright Universidad de Granada},%
 	pdfkeywords={},%
 	pdfcreator={pdfLaTeX},%
@@ -152,20 +149,10 @@
   \definecolor{ugrGray}{RGB}{99, 100, 99}
   \newcommand{\alert}[1]{\textcolor{ugr}{#1}}
 
-
-% -------------------------------------------------------------------
-% ESTILOS DE LA CLASE KOMA
-% -------------------------------------------------------------------
-% Selecciona el tipo de fuente para los títulos (capítulo, sección, subsección) del documento.
-\setkomafont{disposition}{\sffamily\bfseries}
-
-% \recalctypearea % Necesario tras definir la tipografía a usar.
-
 % -------------------------------------------------------------------
 % Marca de agua
 % -------------------------------------------------------------------
 
-% Definición de la imagen de fondo (ver comando \archivoportada).
 \if\boolmarcaagua1
 \RequirePackage{eso-pic}
 \newcommand\AtPageLowerRight[1]{
@@ -191,3 +178,5 @@
   \vspace{-1em}   
   \normalsize{Apellidos, Nombre}: \hrulefill\hrulefill\hrulefill\hrulefill Grupo: \hrulefill 
 }
+
+\AtBeginDocument{\maketitle}
