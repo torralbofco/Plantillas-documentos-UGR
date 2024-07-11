@@ -21,8 +21,9 @@ donde hemos cargado la clase `UGR-generico` con las opciones `monocromo` y `noDa
 Todas las clases creadas comparten las siguientes opciones:
 - `monocromo`: El logotipo y la marca de agua se imprimen en blanco y negro.
 - `corporativo`: El logotipo y la marca de agua se imprimen en el color rojo corporativo.
+- `marcaagua`: Imprime una marca de agua con el escudo de la Universidad de Granada en la parte inferior derecha de la página. El color de dicha marca de agua depende de las anteriores opciones.
 
-Si no se selecciona ninguna de dichas opciones el logotipo (situado siempre en la parte superior izquierda de la página) y la marca de agua se imprime en color
+Si no se selecciona ninguna de dichas opciones el logotipo (situado siempre en la parte superior izquierda de la página) se imprime en color y no se incluye la marca de agua.
 ### Opciones y variables específicas de cada clase
 
 #### Clase `UGR-generico`
