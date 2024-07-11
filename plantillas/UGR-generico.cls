@@ -2,6 +2,22 @@
 \ProvidesClass{UGR-generico}[2023/06/15 Clase de documento genérico siguiendo las directrices del manual de identidad corporativa de la Universidad de Granada] 
 
 
+% ===================================================================
+% Variables de la clase
+% ===================================================================
+
+\RequirePackage{xspace}
+\def\Titulo#1{\def\@Titulo{#1}}\newcommand{\printTitulo}{\@Titulo\xspace}
+\def\Nombre#1{\def\@Nombre{#1}}\newcommand{\printNombre}{\@Nombre\xspace}
+\def\Telefono#1{\def\@Telefono{#1}}\newcommand{\printTelefono}{\@Telefono\xspace}
+\def\Email#1{\def\@Email{#1}}\newcommand{\printEmail}{\@Email\xspace}
+\def\URL#1{\def\@URL{#1}}\newcommand{\printURL}{\@URL\xspace}
+\def\Cargo#1{\def\@Cargo{#1}}\newcommand{\printCargo}{\@Cargo\xspace}
+\def\Departamento#1{\def\@Departamento{#1}}\newcommand{\printDepartamento}{\@Departamento\xspace}
+\def\logoDepartamento#1{\def\@logoDepartamento{#1}}\newcommand{\printlogoDepartamento}{\@logoDepartamento\xspace}
+\def\Centro#1{\def\@Centro{#1}}\newcommand{\printCentro}{\@Centro\xspace}
+\def\Direccion#1{\def\@Direccion{#1}}\newcommand{\printDireccion}{\@Direccion\xspace}
+\def\Universidad#1{\def\@Universidad{#1}}\newcommand{\printUniversidad}{\@Universidad\xspace}
 
 \LoadClass[fontsize=10pt, parskip=full, paper=a4, twoside=false, footinclude=false,headinclude=true, DIV=9]{scrartcl}
 
@@ -20,10 +36,10 @@
   \includegraphics[width=0.4\textwidth]{UGR-MARCA-02-color}
 }
 % \chead{\pagemark}
-\ohead{\upshape \miNombre \\ \miCargo \\\miDepartamento \\ \miCentro}
-\ifoot{\upshape \miDireccion}
-\cfoot{\upshape Tlf.\ +34 \miTelefono}
-\ofoot{\upshape \miEmail · \miURL}
+\ohead{\upshape \printNombre \\ \printCargo \\\printDepartamento \\ \printCentro}
+\ifoot{\upshape \printDireccion}
+\cfoot{\upshape Tlf.\ +34 \printTelefono}
+\ofoot{\upshape \printEmail · \printURL}
 % Alternativamente podemos centrar
 % \cfoot{\upshape \miDireccion · Tlf.\ +34 \miTelefono · \miEmail}
 
@@ -148,4 +164,15 @@
 \newcommand\AtPageLowerRight[1]{\put(\LenToUnit{\paperwidth-0pt},0){\llap{\raisebox{0pt}{#1}}}}
 \AddToShipoutPictureBG{\AtPageLowerRight{\includegraphics[width=0.6\pdfpagewidth]{\marcaAgua}}}
 
-% \renewcommand{\maketitle}{hola}
+% \AtEndDocument{
+% % Para firmar el documento digitalmente, eliminar el siguiente bloque te texto.
+% \vfill\vfill
+% \begin{center}
+%   Granada, \today
+%
+%   \includegraphics[width=7cm]{img/firma}
+%
+%   \printNombre
+% \end{center}
+% \vfill
+% }

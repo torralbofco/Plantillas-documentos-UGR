@@ -11,24 +11,22 @@
 % INFORMACIÓN DEL DOCUMENTO
 % -------------------------------------------------------------------
 
-\newcommand{\miTitulo}{Título\xspace}
-\newcommand{\miNombre}{Nombre Apellidos\xspace}
-\newcommand{\miTelefono}{958 000 000\xspace}
-\newcommand{\miEmail}{profesor@ugr.es\xspace}
-\newcommand{\miURL}{\url{www.ugr.es/~profesor}\xspace}
-\newcommand{\miCargo}{Profesor Titular\xspace}
-\newcommand{\miDepartamento}{Departamento}
-\newcommand{\logoDepartamento}{logoDepartamento}
-\newcommand{\miCentro}{Facultad o escuela}
-\newcommand{\miDireccion}{Fuentenueva s/n, 18071 Granada}
-\newcommand{\miUniversidad}{Universidad de Granada}
+\Titulo{Título}
+\Nombre{Nombre Apellidos}
+\Telefono{958 000 000}
+\Email{profesor@ugr.es}
+\URL{\url{www.ugr.es/~profesor}}
+\Cargo{Cargo}
+\Departamento{Departamento}
+\Centro{Facultad o escuela}
+\Direccion{Fuentenueva s/n, 18071 Granada}
+\Universidad{Universidad de Granada}
 
 \begin{document}
-\thispagestyle{scrheadings}
 
 \hfill\vfill
 \begin{bfseries}
-D./Dña. \miNombre, \miCargo, \miDepartamento 
+D./Dña. \printNombre, \printCargo, \printDepartamento 
 \end{bfseries}
 \bigskip
 
@@ -43,16 +41,18 @@ Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
 
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
 
-Y para que conste y surta efectos donde convenga, expido el presente certificado, a petición del/de la interesada. 
+Y para que conste y surta efectos donde convenga, expido el presente certificado, a petición del/de la interesada, en Granada, a \today. 
 
 % Para firmar el documento digitalmente, eliminar el siguiente bloque te texto.
 \vfill\vfill
 \begin{center}
-  Granada, \today
 
   \includegraphics[width=7cm]{img/firma}
 
-  \miNombre
+  \begin{bfseries}
+  \printNombre\\
+  \printCargo
+  \end{bfseries}
 \end{center}
 \vfill
 
