@@ -5,52 +5,32 @@
 % Francisco Torralbo Torralbo, ftorralbo@ugr.es
 % 2023-02-17
 
-\documentclass[noDatosCabecera, noDatosPie]{UGR-generico}
+\documentclass[noDatosCabecera, noDatosPie]{UGR-carta}
 
 % -------------------------------------------------------------------
 % INFORMACIÓN DEL DOCUMENTO
 % -------------------------------------------------------------------
 
 % Datos del remitente
-\newcommand{\miTitulo}{Título\xspace}
-\newcommand{\miNombre}{Nombre Apellidos\xspace}
-\newcommand{\miTelefono}{958 000 000\xspace}
-\newcommand{\miEmail}{profesor@ugr.es\xspace}
-\newcommand{\miURL}{\url{www.ugr.es/~profesor}\xspace}
-\newcommand{\miCargo}{Profesor Titular\xspace}
-\newcommand{\miDepartamento}{Departamento}
-\newcommand{\logoDepartamento}{logoDepartamento}
-\newcommand{\miCentro}{Facultad o escuela}
-\newcommand{\miDireccion}{Fuentenueva s/n, 18071 Granada}
-\newcommand{\miUniversidad}{Universidad de Granada}
+\Titulo{Título}
+\Nombre{Nombre Apellidos}
+\Telefono{958 000 000}
+\Email{profesor@ugr.es}
+\URL{\url{www.ugr.es/~profesor}}
+\Cargo{Profesor Titular}
+\Departamento{Departamento}
+\Centro{Facultad o escuela}
+\Direccion{Fuentenueva s/n, 18071 Granada}
+\Universidad{Universidad de Granada}
 
 % Datos de destinatario
-\newcommand{\desNombre}{Destinatario\xspace}
-\newcommand{\desDireccion}{Dirección\xspace}
-\newcommand{\desCP}{Código postal\xspace}
-\newcommand{\desPoblacion}{Población\xspace}
-\newcommand{\desPais}{País\xspace}
+\desNombre{Destinatario}
+\desDireccion{Dirección}
+\desCP{Código postal}
+\desPoblacion{Población}
+\desPais{País}
 
 \begin{document}
-
-% Bloque de remitente y destinatario. 
-\vspace*{-15mm}\noindent{\color{\accentColor}\rule{36mm}{0.5pt}}
-\par\vspace{-2mm}
-\begin{minipage}[t]{36mm}
-  \textbf{\miNombre} \\ 
-  \textit{\miCargo} \\
-  \miDepartamento \\ 
-  \miCentro
-\end{minipage}%
-\hspace{0.2\linewidth}
-\begin{minipage}[t]{0.3\linewidth}
-  \textbf{\desNombre}\\
-  \desDireccion \\
-  \desCP, \desPoblacion \\
-  \desPais
-\end{minipage}
-\vspace{25mm}
-% -------------------------------------------
 
 
 Granada, \today
@@ -62,25 +42,17 @@ Ut scelerisque orci nisi, quis gravida massa euismod fermentum. Mauris in pellen
 
 Proin mollis ligula eu neque finibus rutrum. Proin ut dolor sed purus interdum sodales sed vel tellus. In lacinia dui nec erat viverra gravida. Vivamus vel bibendum lorem. Donec et vulputate sapien, et tempor felis. Phasellus ut justo ac ipsum eleifend sodales. Proin sed ante mattis felis lobortis sollicitudin vehicula in purus. Aenean venenatis urna eleifend tellus tempus, ut ullamcorper ex aliquam. Proin rhoncus dolor a pellentesque rhoncus. In a erat nulla. Sed luctus nunc quis dignissim placerat. Nulla facilisi. Proin sed dolor mollis, malesuada sapien vitae, euismod ligula. Fusce ultrices mauris ut tellus tempus, eu luctus lectus malesuada. Suspendisse ut tortor at nisl mattis placerat quis nec arcu. 
 
-% Para firmar el documento digitalmente, eliminar el siguiente bloque te texto.
 \vfill\vfill
+% Para firmar el documento digitalmente, eliminar el siguiente bloque te texto.
 \begin{center}
-
   \includegraphics[width=7cm]{img/firma}
 
   \begin{bfseries}
-  \miNombre\\\smallskip
-  \miCargo
+  \printNombre\\\smallskip
+  \printCargo
   \end{bfseries}
 \end{center}
 \vfill
 
-
-% Si es necesario que el documento tenga varias páginas descomentar el siguiente bloque:
-
-% \newpage
-% \thispagestyle{empty}
-%
-% Texto en nueva página.
 
 \end{document}
