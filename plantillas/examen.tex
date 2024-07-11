@@ -4,34 +4,30 @@
 % Plantilla examen UGR
 % Francisco Torralbo Torralbo, ftorralbo@ugr.es
 
-\documentclass[monocromo]{UGR-examen}
 
 % -------------------------------------------------------------------
 % INFORMACIÓN DEL DOCUMENTO
 % -------------------------------------------------------------------
 
 % Datos del examen
-\newcommand{\exGrado}{Grado\xspace}
-\newcommand{\exDepartamento}{Departamento\xspace}
-\newcommand{\exAsignatura}{Asignatura\xspace}
-\newcommand{\exCursoAcademico}{Curso académico 23/24\xspace}
-\newcommand{\exConvocatoria}{ordinario\xspace}
-\newcommand{\exFecha}{17 de julio de 2024\xspace}
-\newcommand{\exInstrucciones}{Todas las respuestas han de estar razonadas. Todos los ejercicios tienen la misma puntuación. Las hojas deben entregarse numeradas y llevar todas el nombre y grupo, situando esta hoja la primera.\xspace}
+\Grado{Grado}
+\Departamento{Departamento}
+\Asignatura{Asignatura}
+\CursoAcademico{Curso académico 23/24}
+\Convocatoria{ordinario}
+\Fecha{17 de julio de 2024}
+\Instrucciones{Todas las respuestas han de estar razonadas. Todos los ejercicios tienen la misma puntuación. Las hojas deben entregarse numeradas y llevar todas el nombre y grupo, situando esta hoja la primera.}
+
+
+% Metadatos del archivo pdf generado
+\hypersetup{%
+  pdfsubject={Examen \printConvocatoria, \printGrado, \textcopyright Universidad de Granada},%
+	pdfkeywords={examen, Universidad de Granada},%
+}
 
 \begin{document}
 
-% Bloque cabecera examen
-\vspace*{-2em}
-\begin{center}
-  \itshape
-  {\large Examen \exConvocatoria. \exFecha}\\
-  \exAsignatura. \exGrado.
-\end{center}
-\vspace{-1em}   
-\normalsize{Apellidos, Nombre}: \hrulefill\hrulefill\hrulefill\hrulefill Grupo: \hrulefill 
-% --------------------------------
-
+\maketitle
 
 % Texto del examen
 \begin{enumerate}
@@ -48,7 +44,7 @@
 
 {
   \footnotesize
-  \exInstrucciones
+  \printInstrucciones
 }
 
 

@@ -4,6 +4,26 @@
 
 
 % ===================================================================
+% Variables de la clase
+% ===================================================================
+
+\RequirePackage{xspace}
+\def\Grado#1{\def\@Grado{#1}}
+\newcommand{\printGrado}{\@Grado\xspace}
+\def\Departamento#1{\def\@Departamento{#1}}
+\newcommand{\printDepartamento}{\@Departamento\xspace}
+\def\Asignatura#1{\def\@Asignatura{#1}}
+\newcommand{\printAsignatura}{\@Asignatura\xspace}
+\def\CursoAcademico#1{\def\@CursoAcademico{#1}}
+\newcommand{\printCursoAcademico}{\@CursoAcademico\xspace}
+\def\Convocatoria#1{\def\@Convocatoria{#1}}
+\newcommand{\printConvocatoria}{\@Convocatoria\xspace}
+\def\Fecha#1{\def\@Fecha{#1}}
+\newcommand{\printFecha}{\@Fecha\xspace}
+\def\Instrucciones#1{\def\@Instrucciones{#1}}
+\newcommand{\printInstrucciones}{\@Instrucciones\xspace}
+
+% ===================================================================
 % OPCIONES DE LA CLASE
 % ===================================================================
 
@@ -26,6 +46,9 @@
 \ProcessOptions\relax
 
 
+% ===================================================================
+% Clase base scrartcl
+% ===================================================================
 
 \LoadClass[fontsize=10pt, parskip=full, paper=a4, twoside=false, footinclude=false,headinclude=true, DIV=12]{scrartcl}
 
@@ -45,12 +68,14 @@
   \hspace*{-23mm}\includegraphics[width=0.4\textwidth]{\logocabecera}
 }
 \ohead{\upshape \exDepartamento \\ \exCursoAcademico}
+\ohead{\upshape \printDepartamento \\ \printCursoAcademico}
 
 \setkomafont{title}{\itshape\large}
 
 
 \renewcommand{\labelenumii}{\theenumii} 
 \renewcommand{\theenumii}{(\roman{enumii})}
+
 % -------------------------------------------------------------------
 % PAQUETES Y OPCIONES
 % -------------------------------------------------------------------
@@ -99,6 +124,7 @@
   urlcolor = [rgb]{0, 0, 0.5},  % Color de los hipervínculos
   citecolor = [rgb]{0, 0.5, 0}, % Color de las referencias bibliográficas
   pdfsubject={},%
+  pdfsubject={Examen, \textcopyright Universidad de Granada},%
 	pdfkeywords={},%
 	pdfcreator={pdfLaTeX},%
 }
@@ -141,3 +167,18 @@
   \put(0,0){\color{\accentColor}\rule{\paperwidth}{1cm}}
 }
 \AddToShipoutPictureBG{\AtPageLowerRight{\includegraphics[width=0.6\pdfpagewidth]{\marcaAgua}}}
+% -------------------------------------------------------------------
+% Título
+% -------------------------------------------------------------------
+  
+\renewcommand{\maketitle}{
+  % Bloque cabecera examen
+  \vspace*{-2em}
+  \begin{center}
+    \itshape
+    {\large Examen \printConvocatoria. \printFecha}\\
+    \printAsignatura. \printGrado.
+  \end{center}
+  \vspace{-1em}   
+  \normalsize{Apellidos, Nombre}: \hrulefill\hrulefill\hrulefill\hrulefill Grupo: \hrulefill 
+}
