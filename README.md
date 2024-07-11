@@ -6,6 +6,10 @@ Plantillas y modelos de documentos en LaTeX que respeten los criterios de uso de
 
 El objetivo de este repositorio es la creación de una clases de LaTeX para la creación de documentos (certificados, cartas, exámenes,...) que respeten el [manual de identidad visual corporativa](https://secretariageneral.ugr.es/sites/webugr/secretariageneral/public/inline-files/Manual_IVC_UGR_1.pdf) de la Universidad de Granada. Para ello se ha hecho uso tanto de los [elementos de identidad visual corporativa](https://secretariageneral.ugr.es/informacion/servicios/identidad-visual/descarga) como del [repositorio de documentos administrativos](https://institucional.ugr.es/areas/coordinacion-y-proyectos/proyectos/homogeneizacion/documentos-administrativos/repositorio) de la Universidad de Granada.
 
+### Requisitos de la imagen institucional de la Universidad de Granada
+
+TODO: hablar sobre elección de tipografía y ajuste de márgenes.
+
 ## ¿Qué es LaTeX y qué es una *clase de documento*?
 
 Ver [Instalación y uso](#instalacion-y-uso)
