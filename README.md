@@ -52,6 +52,30 @@ Para asignar un valor simplemente llamar al comando y encerrar entre llave `{` y
 Ver ejemplo `certificado.tex`
 
 #### Clase `UGR-carta`
+**Opciones de la clase
+
+**Variables de la clase**
+
+Datos del remitente:
+
+- `\Titulo{Título}`
+- `\Nombre{Nombre Apellidos}`
+- `\Telefono{958 000 000}`
+- `\Email{profesor@ugr.es}`
+- `\URL{www.ugr.es/~profesor}`
+- `\Cargo{Profesor Titular}`
+- `\Departamento{Departamento}`
+- `\Centro{Facultad o escuela}`
+- `\Direccion{Fuentenueva s/n, 18071 Granada}`
+- `\Universidad{Universidad de Granada}`
+
+Datos de destinatario
+- `\desNombre{Destinatario}`
+- `\desDireccion{Dirección}`
+- `\desCP{Código postal}`
+- `\desPoblacion{Población}`
+- `\desPais{País}`
+
 #### Clase `UGR-examen`
 
 ### Ejemplos
