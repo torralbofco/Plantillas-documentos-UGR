@@ -13,7 +13,7 @@
 \def\Nombre#1{\def\@Nombre{#1}}\newcommand{\printNombre}{\@Nombre\xspace}
 \def\Telefono#1{\def\@Telefono{#1}}\newcommand{\printTelefono}{\@Telefono\xspace}
 \def\Email#1{\def\@Email{#1}}\newcommand{\printEmail}{\@Email\xspace}
-\def\URL#1{\def\@URL{#1}}\newcommand{\printURL}{\@URL\xspace}
+\def\URL#1{\def\@URL{#1}}\newcommand{\printURL}{\url{\@URL}\xspace}
 \def\Cargo#1{\def\@Cargo{#1}}\newcommand{\printCargo}{\@Cargo\xspace}
 \def\Departamento#1{\def\@Departamento{#1}}\newcommand{\printDepartamento}{\@Departamento\xspace}
 \def\logoDepartamento#1{\def\@logoDepartamento{#1}}\newcommand{\printlogoDepartamento}{\@logoDepartamento\xspace}
