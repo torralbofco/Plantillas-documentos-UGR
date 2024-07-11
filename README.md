@@ -52,7 +52,9 @@ Para asignar un valor simplemente llamar al comando y encerrar entre llave `{` y
 Ver ejemplo `certificado.tex`
 
 #### Clase `UGR-carta`
-**Opciones de la clase
+**Opciones de la clase**
+- `noDatosCabecera`: No imprime los datos del autor del documento en la parte superior derecha de la cabecera.
+- `noDatosPie`: No imprime los datos del autor del documento en el pie de página.
 
 **Variables de la clase**
 
@@ -76,8 +78,24 @@ Datos de destinatario
 - `\desPoblacion{Población}`
 - `\desPais{País}`
 
-#### Clase `UGR-examen`
+Ver ejemplo `carta.tex`
 
+#### Clase `UGR-examen`
+**Opciones de la clase**
+
+La clase examen no tiene opciones propias.
+
+**Variables de la clase**
+
+- `\Grado{Grado}`
+- `\Departamento{Departamento}`
+- `\Asignatura{Asignatura}`
+- `\CursoAcademico{Curso académico 23/24}`
+- `\Convocatoria{ordinario o extraordinario}`
+- `\Fecha{17 de julio de 2024}`
+- `\Instrucciones{instrucciones sobre la realización del examen}`
+
+Ver ejemplo `examen.tex`
 ### Ejemplos
 
 ### Adaptación de la clase `UGR-generico` para diferentes propósitos.
