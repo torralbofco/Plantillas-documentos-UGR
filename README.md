@@ -27,8 +27,29 @@ Si no se selecciona ninguna de dichas opciones el logotipo (situado siempre en l
 ### Opciones y variables específicas de cada clase
 
 #### Clase `UGR-generico`
+**Opciones de la clase**
+
 - `noDatosCabecera`: No imprime los datos del autor del documento en la parte superior derecha de la cabecera.
 - `noDatosPie`: No imprime los datos del autor del documento en el pie de página.
+
+**Variables de la clase**
+
+La clase proporciona las siguientes variables para fijar los datos del autor del documento y mostrarlos debidamente, bien en la cabecera o en el pie.
+ 
+- `\Titulo{Título}`
+- `\Nombre{Nombre Apellidos}`
+- `\Telefono{958 000 000}`
+- `\Email{profesor@ugr.es}`
+- `\URL{www.ugr.es/~profesor}`
+- `\Cargo{Cargo}`
+- `\Departamento{Departamento}`
+- `\Centro{Facultad o escuela}`
+- `\Direccion{Fuentenueva s/n, 18071 Granada}`
+- `\Universidad{Universidad de Granada}`
+
+Para asignar un valor simplemente llamar al comando y encerrar entre llave `{` y `}` el valor.
+
+Ver ejemplo `certificado.tex`
 
 #### Clase `UGR-carta`
 #### Clase `UGR-examen`
