@@ -43,6 +43,11 @@
   \renewcommand{\accentColor}{ugr}
 }
 
+\def\boolmarcaagua{0}
+\DeclareOption{marcaagua}{
+  \def\boolmarcaagua{1}
+}
+
 \ProcessOptions\relax
 
 
@@ -161,12 +166,16 @@
 % -------------------------------------------------------------------
 
 % Definición de la imagen de fondo (ver comando \archivoportada).
+\if\boolmarcaagua1
 \RequirePackage{eso-pic}
 \newcommand\AtPageLowerRight[1]{
   \put(\LenToUnit{\paperwidth-0pt},0){\llap{\raisebox{0pt}{#1}}}
   \put(0,0){\color{\accentColor}\rule{\paperwidth}{1cm}}
 }
 \AddToShipoutPictureBG{\AtPageLowerRight{\includegraphics[width=0.6\pdfpagewidth]{\marcaAgua}}}
+\fi
+
+
 % -------------------------------------------------------------------
 % Título
 % -------------------------------------------------------------------
