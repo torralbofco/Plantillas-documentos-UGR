@@ -87,7 +87,7 @@ Ver ejemplo `carta.tex`
 #### Clase `UGR-examen`
 **Opciones de la clase**
 
-La clase examen no tiene opciones propias.
+- `bandapie`: muestra una franja de color en el borde inferior del documento.
 
 **Variables de la clase**
 

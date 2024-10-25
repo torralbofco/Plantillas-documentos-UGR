@@ -48,6 +48,10 @@
   \def\boolmarcaagua{1}
 }
 
+\def\boolbandapie{0}
+\DeclareOption{bandapie}{
+  \def\boolbandapie{1}
+}
 \ProcessOptions\relax
 
 
@@ -157,7 +161,9 @@
 \RequirePackage{eso-pic}
 \newcommand\AtPageLowerRight[1]{
   \put(\LenToUnit{\paperwidth-0pt},0){\llap{\raisebox{0pt}{#1}}}
-  \put(0,0){\color{\accentColor}\rule{\paperwidth}{1cm}}
+  \if\boolbandapie1
+    \put(0,0){\color{\accentColor}\rule{\paperwidth}{1cm}}
+  \fi
 }
 \AddToShipoutPictureBG{\AtPageLowerRight{\includegraphics[width=0.6\pdfpagewidth]{\marcaAgua}}}
 \fi
@@ -181,7 +187,7 @@
 
 \AtBeginDocument{
   \maketitle\thispagestyle{scrheadings}
-% Los siguientes dos comandos hacen que todos los enumerate de segundo nivel se escriban con números romanos en minúsculas y entre paréntesis.
-\renewcommand{\labelenumii}{\theenumii} 
-\renewcommand{\theenumii}{(\roman{enumii})}
+  % Los siguientes dos comandos hacen que todos los enumerate de segundo nivel se escriban con números romanos en minúsculas y entre paréntesis.
+  \renewcommand{\labelenumii}{\theenumii} 
+  \renewcommand{\theenumii}{(\roman{enumii})}
 }
