@@ -178,7 +178,7 @@
   \vspace*{-2em}
   \begin{center}
     \itshape
-    {\large Examen \printConvocatoria. \printFecha}\\
+    {\large \printConvocatoria. \printFecha}\\
     \printAsignatura. \printGrado.
   \end{center}
   \vspace{-1em}   
