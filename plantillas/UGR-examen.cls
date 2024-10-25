@@ -74,6 +74,8 @@
 }
 \ohead{\upshape \printDepartamento \\ \printCursoAcademico}
 
+\pagestyle{empty}
+
 \setkomafont{title}{\itshape\large}
 
 
@@ -179,4 +181,4 @@
   \normalsize{Apellidos, Nombre}: \hrulefill\hrulefill\hrulefill\hrulefill Grupo: \hrulefill 
 }
 
-\AtBeginDocument{\maketitle}
+\AtBeginDocument{\maketitle\thispagestyle{scrheadings}}

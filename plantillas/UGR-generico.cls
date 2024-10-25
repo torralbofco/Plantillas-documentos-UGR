@@ -43,6 +43,8 @@
 % Alternativamente podemos centrar
 % \cfoot{\upshape \miDireccion · Tlf.\ +34 \miTelefono · \miEmail}
 
+\pagestyle{empty}
+
 \setkomafont{title}{\itshape\large}
 
 % ===================================================================
@@ -170,6 +172,8 @@
 \newcommand\AtPageLowerRight[1]{\put(\LenToUnit{\paperwidth-0pt},0){\llap{\raisebox{0pt}{#1}}}}
 \AddToShipoutPictureBG{\AtPageLowerRight{\includegraphics[width=0.6\pdfpagewidth]{\marcaAgua}}}
 \fi
+
+\AtBeginDocument{\thispagestyle{scrheadings}}
 
 % \AtEndDocument{
 % % Para firmar el documento digitalmente, eliminar el siguiente bloque te texto.

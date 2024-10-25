@@ -52,6 +52,8 @@
 % Alternativamente podemos centrar
 % \cfoot{\upshape \miDireccion · Tlf.\ +34 \miTelefono · \miEmail}
 
+\pagestyle{empty}
+
 \setkomafont{title}{\itshape\large}
 
 % ===================================================================
@@ -194,6 +196,7 @@
 % }
 
 \AtBeginDocument{
+  \thispagestyle{scrheadings}
 % Bloque de remitente y destinatario. 
 \vspace*{-19mm}\noindent{\color{\accentColor}\rule{36mm}{0.5pt}}
 \par\vspace{-2mm}

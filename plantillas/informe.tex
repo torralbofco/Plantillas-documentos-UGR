@@ -1,0 +1,69 @@
+% !TEX program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% Informe
+% Francisco Torralbo Torralbo, ftorralbo@ugr.es
+% 2023-02-17
+
+\documentclass[marcaagua]{UGR-generico}
+
+% -------------------------------------------------------------------
+% INFORMACIÓN DEL DOCUMENTO
+% -------------------------------------------------------------------
+
+\Titulo{Título}
+\Nombre{Nombre Apellidos}
+\Telefono{958 000 000}
+\Email{profesor@ugr.es}
+\URL{www.ugr.es/~profesor}
+\Cargo{Cargo}
+\Departamento{Departamento}
+\Centro{Facultad o escuela}
+\Direccion{Fuentenueva s/n, 18071 Granada}
+\Universidad{Universidad de Granada}
+
+\begin{document}
+
+\hfill\vfill
+\begin{bfseries}
+  % Modificar según necesidad
+D./Dña. \printNombre, \printCargo, \printDepartamento 
+\end{bfseries}
+\bigskip
+
+\begin{center}
+  \bfseries\scshape\large
+  % Informa
+  Certifica
+\end{center}
+\bigskip
+
+Que, según los antecedentes que obran en [nombre del órgano], [NOMBRE Y APELLIDOS DEL INTERESADO/A], con DNI/Pasaporte [número con letra], Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+
+Y para que conste y surta efectos donde convenga, expido el presente certificado, a petición del/de la interesada, en Granada, a \today. 
+
+% Para firmar el documento digitalmente, eliminar el siguiente bloque te texto.
+\vfill\vfill
+\begin{center}
+
+  \includegraphics[width=7cm]{img/firma}
+
+  \begin{bfseries}
+  \printNombre\\
+  \printCargo
+  \end{bfseries}
+\end{center}
+\vfill
+
+% Si es necesario que el documento tenga varias páginas descomentar el siguiente bloque:
+
+% \newpage
+% Si queremos imprimir de nuevo la cabecera y el pie
+% \thispagestyle{scrheadings}
+
+% Texto en nueva página.
+
+\end{document}
