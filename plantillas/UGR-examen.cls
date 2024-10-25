@@ -178,7 +178,7 @@
   \vspace*{-2em}
   \begin{center}
     \itshape
-    {\large \printConvocatoria. \printFecha}\\
+    {\large \printConvocatoria. \printFecha}\\\medskip
     \printAsignatura. \printGrado.
   \end{center}
   \vspace{-1em}   
@@ -190,4 +190,11 @@
   % Los siguientes dos comandos hacen que todos los enumerate de segundo nivel se escriban con números romanos en minúsculas y entre paréntesis.
   \renewcommand{\labelenumii}{\theenumii} 
   \renewcommand{\theenumii}{(\roman{enumii})}
+}
+\AtEndDocument{
+  \vfill
+  {
+    \footnotesize
+    \printInstrucciones
+  }
 }
