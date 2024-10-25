@@ -182,7 +182,7 @@
     \printAsignatura. \printGrado.
   \end{center}
   \vspace{-1em}   
-  \normalsize{Apellidos, Nombre}: \hrulefill\hrulefill\hrulefill\hrulefill Grupo: \hrulefill 
+  \normalsize{Apellidos, Nombre}: \hrulefill\hrulefill\hrulefill\hrulefill\hrulefill\hrulefill Grupo: \hrulefill 
 }
 
 \AtBeginDocument{
