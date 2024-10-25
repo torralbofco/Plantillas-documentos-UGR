@@ -79,8 +79,6 @@
 \setkomafont{title}{\itshape\large}
 
 
-\renewcommand{\labelenumii}{\theenumii} 
-\renewcommand{\theenumii}{(\roman{enumii})}
 
 % -------------------------------------------------------------------
 % PAQUETES Y OPCIONES
@@ -181,4 +179,9 @@
   \normalsize{Apellidos, Nombre}: \hrulefill\hrulefill\hrulefill\hrulefill Grupo: \hrulefill 
 }
 
-\AtBeginDocument{\maketitle\thispagestyle{scrheadings}}
+\AtBeginDocument{
+  \maketitle\thispagestyle{scrheadings}
+% Los siguientes dos comandos hacen que todos los enumerate de segundo nivel se escriban con números romanos en minúsculas y entre paréntesis.
+\renewcommand{\labelenumii}{\theenumii} 
+\renewcommand{\theenumii}{(\roman{enumii})}
+}
