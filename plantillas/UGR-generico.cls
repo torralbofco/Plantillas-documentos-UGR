@@ -27,8 +27,8 @@
 
 \RequirePackage[
   headsepline=false,
-  headwidth=\textwidth+1.7\marginparwidth,
-  footwidth=\textwidth+1.7\marginparwidth,
+  headwidth=\textwidth+1.5\marginparwidth,
+  footwidth=\textwidth+1.5\marginparwidth,
 ]{scrlayer-scrpage}
 \clearpairofpagestyles
 
