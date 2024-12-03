@@ -52,6 +52,11 @@
 \DeclareOption{bandapie}{
   \def\boolbandapie{1}
 }
+
+\def\boolnoInstrucciones{0}
+\DeclareOption{noInstrucciones}{
+  \def\boolnoInstrucciones{1}
+}
 \ProcessOptions\relax
 
 
@@ -191,10 +196,13 @@
   \renewcommand{\labelenumii}{\theenumii} 
   \renewcommand{\theenumii}{(\roman{enumii})}
 }
-\AtEndDocument{
-  \vfill
-  {
-    \footnotesize
-    \printInstrucciones
+
+\if\boolnoInstrucciones0
+  \AtEndDocument{
+    \vfill
+    {
+      \footnotesize
+      \printInstrucciones
+    }
   }
-}
+\fi

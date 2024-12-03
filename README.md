@@ -88,6 +88,7 @@ Ver ejemplo `carta.tex`
 **Opciones de la clase**
 
 - `bandapie`: muestra una franja de color en el borde inferior del documento.
+- `noInstrucciones`: No imprime las instrucciones del examen en el pie de la última página. Se puede usar alternativamente el comando `\printInstrucciones` donde se desee que aparezcan las instrucciones.
 
 **Variables de la clase**
 
