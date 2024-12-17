@@ -57,6 +57,11 @@
 \DeclareOption{noInstrucciones}{
   \def\boolnoInstrucciones{1}
 }
+
+\def\boolCopyright{0}
+\DeclareOption{copyright}{
+  \def\boolCopyright{1}
+}
 \ProcessOptions\relax
 
 
@@ -171,6 +176,22 @@
   \fi
 }
 \AddToShipoutPictureBG{\AtPageLowerRight{\includegraphics[width=0.6\pdfpagewidth]{\marcaAgua}}}
+\fi
+
+% -------------------------------------------------------------------
+% Copyright en marca de agua
+% -------------------------------------------------------------------
+
+\if\boolCopyright1
+\RequirePackage{eso-pic}
+\AddToShipoutPictureBG{\AtPageLowerLeft{
+{\color{lightgray}
+  \raisebox{5em}{
+    \rotatebox[origin=l]{54}{
+      \scalebox{6.3}{\quad\copyright\ Universidad de Granada}
+    }
+  }
+}}}
 \fi
 
 
