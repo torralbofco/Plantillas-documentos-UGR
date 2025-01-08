@@ -29,16 +29,16 @@
 
 \newcommand{\marcaAgua}{marca-agua-logo-ugr-color}
 \newcommand{\accentColor}{ugr}
-\newcommand{\logocabecera}{UGR-MARCA-02-color}
+\newcommand{\logocabecera}{logo-ugr-horizontal}
 
 \DeclareOption{monocromo}{
-  \renewcommand{\logocabecera}{UGR-MARCA-02-monocromo}
+  \renewcommand{\logocabecera}{logo-ugr-horizontal-monocromo}
   \renewcommand{\marcaAgua}{marca-agua-logo-ugr}
   \renewcommand{\accentColor}{ugrGray}
 }
 
 \DeclareOption{corporativo}{
-  \renewcommand{\logocabecera}{UGR-MARCA-02-color-corporativo}
+  \renewcommand{\logocabecera}{logo-ugr-horizontal-color-corporativo}
   \renewcommand{\marcaAgua}{marca-agua-logo-ugr-color}
   \renewcommand{\accentColor}{ugr}
 }

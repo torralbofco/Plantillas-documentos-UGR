@@ -42,7 +42,7 @@
 \clearpairofpagestyles
 
 \ihead{
-  \includegraphics[width=0.4\textwidth]{UGR-MARCA-02-color}
+  \includegraphics[width=0.4\textwidth]{logo-ugr-horizontal}
 }
 % \chead{\pagemark}
 \ohead{\upshape \printNombre \\ \printCargo \\\printDepartamento \\ \printCentro}
@@ -67,7 +67,7 @@
   \renewcommand{\marcaAgua}{marca-agua-logo-ugr}
   \renewcommand{\accentColor}{ugrGray}
   \ihead{
-    \includegraphics[width=0.4\textwidth]{UGR-MARCA-02-monocromo}
+    \includegraphics[width=0.4\textwidth]{logo-ugr-horizontal-monocromo}
   }
 }
 
@@ -75,7 +75,7 @@
   \renewcommand{\marcaAgua}{marca-agua-logo-ugr-color}
   \renewcommand{\accentColor}{ugr}
   \ihead{
-    \includegraphics[width=0.4\textwidth]{UGR-MARCA-02-color-corporativo}
+    \includegraphics[width=0.4\textwidth]{logo-ugr-horizontal-color-corporativo}
   }
 }
 
