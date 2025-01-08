@@ -1,13 +1,10 @@
 # Plantillas y modelos de documentos en LaTeX para la Universidad de Granada
 
-Plantillas y modelos de documentos en LaTeX que respeten los criterios de uso de la imagen corporativa de la Universidad de Granada
+*Clases de LaTeX* así como modelos de documentos que respeten los criterios de uso de la imagen corporativa de la Universidad de Granada.
 
 ## Objetivo
 
-El objetivo de este repositorio es la creación de una clases de LaTeX para la creación de documentos (certificados, cartas, exámenes,...) que respeten el [manual de identidad visual corporativa](https://secretariageneral.ugr.es/sites/webugr/secretariageneral/public/inline-files/Manual_IVC_UGR_1.pdf) de la Universidad de Granada. Para ello se ha hecho uso tanto de los [elementos de identidad visual corporativa](https://secretariageneral.ugr.es/informacion/servicios/identidad-visual/descarga) como del [repositorio de documentos administrativos](https://institucional.ugr.es/areas/coordinacion-y-proyectos/proyectos/homogeneizacion/documentos-administrativos/repositorio) de la Universidad de Granada. Ver la sección [Algunas consideraciones sobre el diseño y los requisitos de la imagen institucional de la Universidad de Granada](#algunas-consideraciones-sobre-el-diseño-y-los-requisitos-de-la-imagen-institucional-de-la-universidad-de-granada)
-## ¿Qué es LaTeX y qué es una *clase de documento*?
-
-Ver [Instalación y uso](#instalacion-y-uso)
+El objetivo de este repositorio es la creación de unas clases de LaTeX para la creación de documentos (certificados, cartas, exámenes,...) que respeten el [manual de identidad visual corporativa](https://secretariageneral.ugr.es/sites/webugr/secretariageneral/public/inline-files/Manual_IVC_UGR_1.pdf) de la Universidad de Granada. Para ello se ha hecho uso tanto de los [elementos de identidad visual corporativa](https://secretariageneral.ugr.es/informacion/servicios/identidad-visual/descarga) como del [repositorio de documentos administrativos](https://institucional.ugr.es/areas/coordinacion-y-proyectos/proyectos/homogeneizacion/documentos-administrativos/repositorio) de la Universidad de Granada. Ver para más detalles la sección [Algunas consideraciones sobre el diseño y los requisitos de la imagen institucional de la Universidad de Granada](#algunas-consideraciones-sobre-el-diseño-y-los-requisitos-de-la-imagen-institucional-de-la-universidad-de-granada)
 
 ## Clases y opciones
 Actualmente se han creado tres clases: `UGR-generico.cls`, `UGR-carta.cls` y `UGR-examen.cls`. Para seleccionar dicha clase en nuestro documento LaTeX debemos usar el comando `\documentclass` al inicio del documento, p.e.:
@@ -86,7 +83,7 @@ Ver ejemplo [`carta.tex`](carta/carta.tex).
 
 - `bandapie`: muestra una franja de color en el borde inferior del documento.
 - `noInstrucciones`: No imprime las instrucciones del examen en el pie de la última página. Se puede usar alternativamente el comando `\printInstrucciones` donde se desee que aparezcan las instrucciones.
-- `copyright`: Añade una marca de agua en todas las páginas con el texto "(c) Universidad de Granada". Útil para publicar los examenes en PRADO.
+- `copyright`: Añade una marca de agua en todas las páginas con el texto *"(c) Universidad de Granada"*. Útil para publicar los examenes en PRADO.
 
 **Variables de la clase**
 
@@ -109,15 +106,15 @@ Hay dos formas de usar las clases. La [primera de ellas](#descargar-y-uso) es m�
 En el siguiente ejemplo descargaremos las clases y crearemos un nuevo documento usando la clase `UGR-generico.cls`:
 
 1. Descarga el repositorio. Para ello pulsa el botón verde  `< > Code` y selecciona *Download ZIP*.
-2. Entra en la carpeta `generico` y crea un nuevo fichero `ejemplo-generico.tex` **en dicha carpeta** (p.e. copia `certificado.tex` o `informe.tex`).
+2. Entra en la carpeta `generico` y crea un nuevo fichero `ejemplo-generico.tex` **en dicha carpeta**.
 3. Copia el contenido de `certificado.tex` o `informe.tex` en tu documento `ejemplo-generico.tex``.
 3. Edita dicho fichero con tu editor favorito añadiendo tus datos a las variables de clase y modificando el texto del cuerpo del mensaje.
 4. Compila dicho documento mediante `pdfLaTeX`.
 
 
-### Instalación de las clases y logos el el arbol local de TeX.
+### Instalación de las clases y logos en el arbol local de TeX.
 
-Es posible *instalar* tanto las clases como los logos de la UGR para que estén disponibles en cualquier documento de nuestro ordenador, ahorrándonos así los pasos (1) y (2) cada vez que queramos crear un documento con las plantillas. Para ello, hay que hacer una única vez los siguientes pasos:
+Es posible *instalar* tanto las clases como los logos de la UGR para que estén disponibles en cualquier documento de nuestro ordenador, ahorrándonos así los pasos (1) y (2) cada vez que queramos crear un documento con las plantillas. Para ello, hay que hacer **una única vez** los siguientes pasos:
 
 1. Descarga el repositorio. Para ello pulsa el botón verde  `< > Code` y selecciona *Download ZIP*.
 2. Localizar la carpeta del *arbol local de TeX* ('local texmf tree'). La ubicación de esta carpeta dependerá tanto de nuestro sistema operativo como de la *distribución* de LaTeX que tengamos instalada. A continuación hay un listado de las ubicaciones habituales:
@@ -125,11 +122,11 @@ Es posible *instalar* tanto las clases como los logos de la UGR para que estén 
     - MacOS: `~/Library/texmf/`
     - Windows: `C:\Users\nombreUsuario\texmf`
 3. Copiar los ficheros de clase ([UGR-generico.cls](generico/UGR-generico.cls), [UGR-carta.cls](carta/UGR-carta.cls) y [UGR-examen.cls](examen/UGR-examen.cls)) al subdirectorio `tex` en dicha carpeta (crear dicho directorio si no existe)
-4. Copiar los ficheros de logos ([logo-ugr-horizontal](generico/logos/logo-ugr-horizontal.pdf), [logo-ugr-horizontal-monocromo](generico/logos/logo-ugr-horizontal-monocromo.pdf), [logo-ugr-color-corporativo](generico/logos/logo-ugr-color-corporativo.pdf)) en el subdirectorio `tex/images` (crear dicho directorio si no existe)
+4. Copiar los ficheros de logos ([logo-ugr-horizontal](generico/logos/logo-ugr-horizontal.pdf), [logo-ugr-horizontal-monocromo](generico/logos/logo-ugr-horizontal-monocromo.pdf), [logo-ugr-color-corporativo](generico/logos/logo-ugr-color-corporativo.pdf) [marca-agua-logo-ugr-color](generico/logos/marca-agua-logo-ugr-color.pdf) y [marca-agua-logo-ugr](generico/logos/marca-agua-logo-ugr.pdf)) en el subdirectorio `tex/images` (crear dicho directorio si no existe)
 
 Una vez hecho esto quizá sea necesario reiniciar el equipo.
 
-Ahora crear un documento (por ejemplo `ejemplo-generico.tex`) en cualquier carepta de nuestro equipo y copiar en él el contenido de `certificado.tex` y editar el fichero añadiendo los datos y las opciones que creamos convenientes. Finalmente compilar el documento para ver el resultado.
+Ahora crear un documento (por ejemplo `ejemplo-generico.tex`) en cualquier carpeta de nuestro equipo y copiar en él el contenido de `certificado.tex`. Editar el fichero añadiendo los datos y las opciones que creamos convenientes. Finalmente compilar el documento para ver el resultado.
 
 ## TODO
 - Automatización y uso con `pandoc`
