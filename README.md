@@ -1,3 +1,6 @@
+> [!WARNING]  
+> Este repositorio se ha movido de forma permanente a [latex-mat-ugr/Plantillas-UGR](https://github.com/latex-mat-ugr/Plantillas-UGR). Diríjase al nuevo repositorio para obtener la última versión.
+
 # Plantillas y modelos de documentos en LaTeX para la Universidad de Granada
 
 *Clases de LaTeX* así como modelos de documentos que respeten los criterios de uso de la imagen corporativa de la Universidad de Granada.
